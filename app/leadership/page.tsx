@@ -12,7 +12,7 @@ const executiveLeaders = [
   {
     name: "Arun Kumar Manickam",
     title: "Founding Team & Chief Happiness Officer",
-    image: "/pics/arun-kumar-manickam.png",
+    image: "/pic/arun-kumar-manickam.png",
     bio: "Visionary banking professional with over two decades of experience across leading financial institutions including State Bank of India, IDBI Bank, ICICI Bank, ING Vysya Bank, and Cholamandalam DBS. Holds a Master's degree in Management from BSMED, Coimbatore, with strategic leadership capabilities enhanced through IIM-A.",
     linkedin: "https://www.linkedin.com/in/arun-kumar-manickam-b7476150/",
     email: "arun@tamilworldbank.com",
@@ -22,7 +22,7 @@ const executiveLeaders = [
   {
     name: "S. Viswanathan",
     title: "Chairman, ASV Agriculture Research & Export P Ltd",
-    image: "/pics/s-viswanathan.png",
+    image: "/pic/s-viswanathan.png",
     bio: "Visionary agripreneur and Chairman of ASV Agriculture Research & Export Pvt. Ltd. Strong commitment to innovation in farming practices, value-added agri-products, and promoting scientific research. Instrumental in farmer empowerment and positioning India as a global leader in agricultural exports.",
     linkedin: "#",
     email: "viswanathan@tamilworldbank.com",
@@ -32,7 +32,7 @@ const executiveLeaders = [
   {
     name: "Ashwath Ram",
     title: "Chief Commercial Officer",
-    image: "/pics/ashwath-ram.png",
+    image: "/pic/ashwath-ram.png",
     bio: "Seasoned professional with extensive experience in hospitality with deep understanding of the Indian market. Proven track record of delivering growth and profitability, creating strategies that drive revenue, increase market share, and enhance customer satisfaction.",
     linkedin: "https://www.linkedin.com/in/ashwath-ram-a40a972b/",
     email: "ashwath@tamilworldbank.com",
@@ -42,7 +42,7 @@ const executiveLeaders = [
   {
     name: "N. C. Vasudev",
     title: "Director, ALBUM Semiconductors",
-    image: "/pics/nc-vasudev.png",
+    image: "/pic/nc-vasudev.png",
     bio: "Seasoned semiconductor expert with over two decades of experience in advanced microelectronics, embedded systems, and memory technologies. Former Principal Engineer at ARM Embedded Technologies and senior positions at Intel, STMicroelectronics. M.Tech in Microelectronics from IIT Bombay.",
     linkedin: "https://www.linkedin.com/in/n-c-vasudev-63930512/",
     email: "vasudev@tamilworldbank.com",
@@ -57,7 +57,7 @@ const seniorLeaders = [
     title: "General Manager - Operations",
     expertise: "25+ years in Business Planning & Control, Textile Industry Operations",
     certifications: "SAP Solution Consultant, ISO Lead Auditor, LEAN Six Sigma Black Belt",
-    image: "/pics/mohan-manickam.png",
+    image: "/pic/mohan-manickam.png",
     specialization: "Operations",
   },
   {
@@ -65,7 +65,7 @@ const seniorLeaders = [
     title: "Head Corporate Relations",
     expertise: "20+ years in pharmaceutical distribution, CEO of Monarch Pharmaceuticals",
     linkedin: "https://www.linkedin.com/in/ramya-raman-b3b061368/",
-    image: "/pics/ramya-raman.png",
+    image: "/pic/ramya-raman.png",
     specialization: "Corporate Relations",
   },
   {
@@ -73,7 +73,7 @@ const seniorLeaders = [
     title: "Chief Sports Officer",
     expertise: "Gold medalist in discus throw, Junior National Sports Meet 1997",
     linkedin: "https://www.linkedin.com/in/sangeetha-kumar-98ab94369/",
-    image: "/pics/sangeetha-kumar.png",
+    image: "/pic/sangeetha-kumar.png",
     specialization: "Sports & Wellness",
   },
   {
@@ -81,7 +81,7 @@ const seniorLeaders = [
     title: "Chief Technology Officer",
     expertise: "10+ years in technology leadership, digital transformation, AI and cloud computing",
     linkedin: "https://www.linkedin.com/in/intelligem/",
-    image: "/pics/ashutosh-singh.png",
+    image: "/pic/ashutosh-singh.png",
     specialization: "Technology",
   },
 ]
@@ -92,7 +92,7 @@ const advisoryBoard = [
     title: "Advisory Board Member",
     expertise: "23+ years in banking, investment management, capital markets. Chartered Accountant and Cost Accountant",
     linkedin: "https://www.linkedin.com/in/riyazshaik/",
-    image: "/pics/riyaz-shaik.png",
+    image: "/pic/riyaz-shaik.png",
     category: "Financial Expert",
   },
   {
@@ -100,7 +100,7 @@ const advisoryBoard = [
     title: "FinTech Innovation Advisor",
     expertise: "IIT & IIM credentials, 20+ years in FinTech innovation and AI-enabled solutions",
     linkedin: "https://www.linkedin.com/in/elizabethzavier/",
-    image: "/pics/elizabeth-zavier.png",
+    image: "/pic/elizabeth-zavier.png",
     category: "Innovation Leader",
   },
   {
@@ -108,7 +108,7 @@ const advisoryBoard = [
     title: "Corporate Strategy Advisor",
     expertise: "30+ years in Oil & Gas, Regional Turnaround Director at Shell Asia, MBA from Imperial College London",
     linkedin: "https://www.linkedin.com/in/pulisaravanan",
-    image: "/pics/puli-saravanan.png",
+    image: "/pic/puli-saravanan.png",
     category: "Strategy Expert",
   },
   {
@@ -116,7 +116,7 @@ const advisoryBoard = [
     title: "Automotive & EV Strategy Advisor",
     expertise: "25+ years in automotive innovation, EV policy development, former Global Director at VinFast LLC",
     linkedin: "https://www.linkedin.com/in/kasiviswanathan-panchatsharam-aa12b320/",
-    image: "/pics/kasiviswanathan-panchatsharam.png",
+    image: "/pic/kasiviswanathan-panchatsharam.png",
     category: "Industry Pioneer",
   },
   {
@@ -124,7 +124,7 @@ const advisoryBoard = [
     title: "Legal & Project Management Consultant",
     expertise: "Global project management experience, Agile practitioner, CRM strategist, PGDM in Enterprise Creation",
     linkedin: "https://www.linkedin.com/in/shrinithimohan/",
-    image: "/pics/shrinithi-mohan.png",
+    image: "/pic/shrinithi-mohan.png",
     category: "Legal Expert",
   },
 ]
@@ -135,7 +135,7 @@ const honoraryAdvisors = [
     title: "Honorary Advisor",
     expertise: "43+ years at Singapore Airlines, 50+ years of Tamil community leadership in Singapore",
     background: "Veteran aviation professional and community leader, former President of Singai Tamil Association",
-    image: "/pics/v-krishnasamy.png",
+    image: "/pic/v-krishnasamy.png",
   },
 ]
 
@@ -144,14 +144,14 @@ const additionalLeaders = [
     name: "Arun KJ",
     title: "Strategic Advisor",
     expertise: "Business development and strategic planning expertise",
-    image: "/pics/arun-kj.png",
+    image: "/pic/arun-kj.png",
   },
   {
     name: "Dato Dr. Jason Murugasan",
     title: "Medical & Healthcare Strategic Advisor",
     expertise:
       "Distinguished healthcare leader with Malaysian Dato title, medical expertise and healthcare industry advisory services",
-    image: "/pics/jason-murugasan.png",
+    image: "/pic/jason-murugasan.png",
   },
 ]
 
