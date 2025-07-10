@@ -1,9 +1,9 @@
-# Netlify redirects for Next.js App Router static export
-/               /index.html             200
-/about/         /about.html             200
-/contact/       /contact.html           200
-/products/      /products.html          200
-/partners/      /partners.html          200
-/leadership/    /leadership.html        200
-/culture-rural/ /culture-rural.html     200
-/*              /404.html               404
+# Next.js App Router static export redirects
+/               /index.html                 200
+/about          /about/index.html           200
+/contact        /contact/index.html         200
+/products       /products/index.html        200
+/partners       /partners/index.html        200
+/leadership     /leadership/index.html      200
+/culture-rural  /culture-rural/index.html   200
+/*              /index.html                 200
