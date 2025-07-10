@@ -11,13 +11,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // Ensure CSS is properly handled in static export
-  experimental: {
-    appDir: true,
-  },
-  // Configure asset prefix for proper CSS loading
+  // Remove the invalid experimental.appDir option
   assetPrefix: '',
-  // Ensure proper static generation
   distDir: 'out',
 }
 
