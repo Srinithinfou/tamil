@@ -33,7 +33,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="relative bg-gradient-to-br from-green-100/50 to-white rounded-2xl p-8">
                 <img
-                  src="/images/aboutpage.png?height=500&width=600"
+                  src="/pic/aboutpage.png?height=500&width=600"
                   alt="Tamil World Bank Heritage"
                   className="w-full h-auto rounded-xl shadow-lg"
                 />
