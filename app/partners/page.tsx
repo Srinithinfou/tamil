@@ -1,34 +1,34 @@
 import Link from "next/link"
 import { ArrowRight, Handshake, Globe, Award, CheckCircle, Building, Users } from "lucide-react"
 
-export default function PartnersPage() {
-  const partners = [
-    {
-      name: "Tamil Cultural Association",
-      type: "Cultural Partner",
-      description: "Promoting Tamil culture and heritage through educational programs and events.",
-      logo: "/placeholder.svg?height=100&width=200",
-    },
-    {
-      name: "Rural Development Foundation",
-      type: "Development Partner",
-      description: "Supporting rural communities with infrastructure and development projects.",
-      logo: "/placeholder.svg?height=100&width=200",
-    },
-    {
-      name: "Tamil Business Network",
-      type: "Business Partner",
-      description: "Connecting Tamil entrepreneurs and businesses globally for mutual growth.",
-      logo: "/placeholder.svg?height=100&width=200",
-    },
-    {
-      name: "Educational Trust",
-      type: "Education Partner",
-      description: "Advancing Tamil education and scholarship programs worldwide.",
-      logo: "/placeholder.svg?height=100&width=200",
-    },
-  ]
+const partners = [
+  {
+    name: "Tamil Cultural Association",
+    type: "Cultural Partner",
+    description: "Promoting Tamil culture and heritage through educational programs and events.",
+    logo: "/placeholder.svg?height=100&width=200",
+  },
+  {
+    name: "Rural Development Foundation",
+    type: "Development Partner",
+    description: "Supporting rural communities with infrastructure and development projects.",
+    logo: "/placeholder.svg?height=100&width=200",
+  },
+  {
+    name: "Tamil Business Network",
+    type: "Business Partner",
+    description: "Connecting Tamil entrepreneurs and businesses globally for mutual growth.",
+    logo: "/placeholder.svg?height=100&width=200",
+  },
+  {
+    name: "Educational Trust",
+    type: "Education Partner",
+    description: "Advancing Tamil education and scholarship programs worldwide.",
+    logo: "/placeholder.svg?height=100&width=200",
+  },
+]
 
+export default function PartnersPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
