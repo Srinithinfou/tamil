@@ -33,7 +33,7 @@ export default function CultureRuralPage() {
             <div className="relative">
               <div className="relative bg-gradient-to-br from-green-100/50 to-white rounded-2xl p-8">
                 <img
-                  src="/pics/green1.png?height=300&width=400"
+                  src="/pic/green1.png?height=300&width=400"
                   alt="Tamil Culture and Rural Development"
                   className="w-full h-auto rounded-xl shadow-lg"
                 />
