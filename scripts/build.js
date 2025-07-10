@@ -3,7 +3,7 @@ const fs = require("fs")
 const path = require("path")
 
 try {
-  console.log("🚀 Starting Next.js build and export...")
+  console.log("🚀 Starting Next.js build...")
 
   // Clean previous build
   const outDir = path.join(process.cwd(), "out")
@@ -15,55 +15,33 @@ try {
   // Run Next.js build
   execSync("next build", { stdio: "inherit" })
 
-  // Verify out directory and contents
+  // Run post-build script
+  execSync("node scripts/post-build.js", { stdio: "inherit" })
+
+  // Verify build
   if (fs.existsSync(outDir)) {
-    console.log("✅ Build successful - out directory created")
+    console.log("✅ Build completed successfully")
 
-    // Check for CSS files
-    const staticDir = path.join(outDir, "_next", "static")
+    // Check CSS file exists
+    const staticDir = path.join(outDir, "_next", "static", "css")
     if (fs.existsSync(staticDir)) {
-      console.log("✅ Static assets directory found")
-
-      // Look for CSS files
-      const findCSSFiles = (dir) => {
-        const files = fs.readdirSync(dir)
-        files.forEach((file) => {
-          const filePath = path.join(dir, file)
-          const stats = fs.statSync(filePath)
-          if (stats.isDirectory()) {
-            findCSSFiles(filePath)
-          } else if (file.endsWith(".css")) {
-            console.log(`✅ CSS file found: ${filePath.replace(outDir, "")}`)
-          }
-        })
-      }
-
-      findCSSFiles(staticDir)
+      const cssFiles = fs.readdirSync(staticDir).filter((f) => f.endsWith(".css"))
+      console.log(`✅ Found ${cssFiles.length} CSS file(s):`, cssFiles)
     }
 
-    // List main files
-    const files = fs.readdirSync(outDir)
-    console.log("📁 Main files in out directory:")
-    files.forEach((file) => {
-      console.log(`   📄 ${file}`)
+    // Check main HTML files
+    const htmlFiles = ["index.html", "about/index.html", "contact/index.html"]
+    htmlFiles.forEach((file) => {
+      const filePath = path.join(outDir, file)
+      if (fs.existsSync(filePath)) {
+        const content = fs.readFileSync(filePath, "utf8")
+        if (content.includes("/_next/static/css/")) {
+          console.log(`✅ CSS linked in ${file}`)
+        } else {
+          console.log(`⚠️  No CSS found in ${file}`)
+        }
+      }
     })
-
-    // Check for index.html
-    const indexPath = path.join(outDir, "index.html")
-    if (fs.existsSync(indexPath)) {
-      console.log("✅ index.html found")
-
-      // Check if CSS is referenced in HTML
-      const htmlContent = fs.readFileSync(indexPath, "utf8")
-      if (htmlContent.includes(".css")) {
-        console.log("✅ CSS references found in HTML")
-      } else {
-        console.log("⚠️  No CSS references found in HTML")
-      }
-    }
-  } else {
-    console.error("❌ Build failed - out directory not found")
-    process.exit(1)
   }
 } catch (error) {
   console.error("❌ Build failed:", error.message)
