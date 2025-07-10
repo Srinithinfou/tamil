@@ -11,10 +11,14 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // Disable server-side features for static export
+  // Ensure CSS is properly handled in static export
   experimental: {
     appDir: true,
-  }
+  },
+  // Configure asset prefix for proper CSS loading
+  assetPrefix: '',
+  // Ensure proper static generation
+  distDir: 'out',
 }
 
 export default nextConfig
