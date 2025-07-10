@@ -238,7 +238,7 @@ export default function PartnersPage() {
             <div className="relative">
               <div className="relative bg-gradient-to-br from-green-50/30 to-white rounded-2xl p-8">
                 <img
-                  src="/images/con.png?height=500&width=600"
+                  src="/pics/con.png?height=500&width=600"
                   alt="Partnership Collaboration"
                   className="w-full h-auto rounded-xl shadow-lg"
                 />
