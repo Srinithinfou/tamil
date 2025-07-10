@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Handshake, Globe, Award, CheckCircle, Building, Users } from "lucide-react"
+import { ArrowRight, Users, Globe, Award, CheckCircle, Building, Heart } from 'lucide-react'
 
 const partners = [
   {
@@ -201,7 +201,7 @@ export default function PartnersPage() {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Handshake className="h-5 w-5 text-green-600" />
+                    <Heart className="h-5 w-5 text-green-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Mutual Growth</h3>
