@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  trailingSlash: true,
+  trailingSlash: false,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -11,8 +11,9 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // Remove the invalid experimental.appDir option
+  // Force absolute paths for assets
   assetPrefix: '',
+  basePath: '',
   distDir: 'out',
 }
 
