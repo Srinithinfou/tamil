@@ -220,7 +220,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative bg-gradient-to-br from-green-50/30 to-white rounded-2xl p-8">
                 <img
-                  src="/pics/about.png?height=400&width=500"
+                  src="/pic/about.png?height=400&width=500"
                   alt="Tamil Community Banking"
                   className="w-full h-auto rounded-xl shadow-lg"
                 />
